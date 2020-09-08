@@ -1,41 +1,22 @@
 {
-  "name": "myassignment6",
+  "name": "react-gh-pages",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://solacetech001.github.io/rhukiereact",
-  "engines": {
-    "node": "12.18.3",
-    "npm": "6.14.6"
-
-  },
+  "homepage": "http://solacetech001.github.io/rhukiereact",
   "dependencies": {
-    "axios": "^0.20.0",
-    "cra-template": "1.0.3",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0",
+    "react-scripts": "1.0.7"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "deploy": "gh-pages -d build"    
   }
 }
