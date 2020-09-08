@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#logo{
+    
+        background-color: #ff0000;
+        width: 2.5em;
+        margin-left: 0.5em;
+        color:#fff;
+        text-align: center;
+        height: 2em;
+        box-shadow: 1px 4px 1px brown;
+        border-radius: 0.1em;
+        padding-top: 0.6em;
+        font-size: 2.4em;
+       
+       
+    }
+.header{
+    display: flex;
+}    
+.text{
+    color: red;
+    font-weight: 700;
+    margin-left: 2em;
+    padding-top: 0.9em;
+    font-size: 2.2em;
+}
+.cases{
+    border: 0.1px solid #f5bbbb;
+    width: 14em;
+    margin-left: 2em;
+    padding-left: 0.5em;
+    padding-bottom: 2.5em;
+    box-shadow: 1px 2.5px 2px 1px #f19090;
+    
+}
+.fa-caret-up {
+    color: red;
+    margin-left: 0.5em;
+}
+span{
+    font-weight: 700;
+}
+.fa-caret-down{
+    color: green;
+    margin-left: 0.5em;
+}
+.dashboard{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5em;
+}
+.data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5em;
+    margin-left: 2.1em;
+    position: relative;
+    
+}
+.data table {
+    width: 100%;
+    box-shadow: 1px 4px 1px lightgray;
+}
+.tips {
+    width: 14.8em;
+    border: 1px solid #e2e2e2;
+    height: 11em;
+    float: left;
+    margin-left: 30px;
+    margin-top: 40px;
+    
+}
+.tips p {
+    text-align: center;
+    color: red;
+    border: .1px solid #e49191;
+    background-color: #e49191;
+    font-weight: 800;
+    width: 12em;
+    margin-left: 1em;
+    border-radius: 5px;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+img {
+    margin-left: 1em;
+}
+
+#spinner{
+    border: 5px solid #eee;
+    width: 50px;
+    height:50px;
+    border-top-color: rgb(221, 25, 58);
+    position: absolute;
+    left: 30em;
+    top:10em;
+    animation: spin 0.75s linear infinite;
+    border-radius: 100%
+}
+h1{
+    margin-top: 230px;
+    font-size: 1em;
+    font-family: cursive;
+    font-weight: bold;
+    margin-left: 20px;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@media screen and (max-width:800px) {
+    .dashboard{
+        display: block;
+    }
+    .cases {
+        width: 88%;
+        margin-bottom: 2em;
+    }
+    /* .data table{
+        display: block;
+        width: 100%;
+        font-size: 0.8em;
+    }
+    #spinner{
+        border: 5px solid #eee;
+        border-top-color: rgb(221, 25, 58);
+        position: absolute;
+        left: 10em;
+        top:10em;
+        animation: spin 0.75s linear infinite;
+        border-radius: 100%
+    }
+    .tips{
+            width: 80%;    
+    }
+    .text{
+        color: red;
+        font-weight: 700;
+        margin-left: 2em;
+        padding-top: 0.9em;
+        font-size: 1.8em;
+    }
+    h1 {
+        color:green; 
+        font-size: 1em;
+        font-family: cursive;
+    } */
+}
